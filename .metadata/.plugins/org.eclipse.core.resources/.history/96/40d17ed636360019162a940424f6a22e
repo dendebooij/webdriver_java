@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="/chessclock.ChessClockController"
+	xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="50" vgap="50"
+	styleClass="root">
+	
+	<padding><Insets top="20" right="20" bottom="10" left="20"/></padding>
+	
+	<gridLinesVisible>false</gridLinesVisible>
+	
+	<Text id="title" text="Chess Clock" 
+        GridPane.columnIndex="0" GridPane.rowIndex="0"
+        GridPane.columnSpan="2"/>
+ 
+    <Label text="Enter name player 1:"
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+ 
+    <TextField  fx:id="player-one" text="Player One"
+        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+ 
+    <Label text="Enter name player 2:"
+        GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+ 
+    <TextField fx:id="player-two" text="Player Two"
+        GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        
+    <Label text="Time per player in minutes:"
+        GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+ 
+    <TextField fx:id="time-per-player" text="30" 
+        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        
+        <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="play-button" text="Play"    
+        onAction="#handlePlayButtonAction"/>
+        </HBox>
+
+	<Text fx:id="actiontarget"
+       GridPane.columnIndex="0" GridPane.columnSpan="2"
+ 	   GridPane.halignment="RIGHT" GridPane.rowIndex="5"/>
+ 	   
+ 	   <stylesheets>
+ 	   <URL value="@application.css" />
+ 	   </stylesheets>
+
+</GridPane>
+

@@ -1,0 +1,19 @@
+1550696784835	Rename resource 'FXMLdocument.fxml'
+1550697071850	Rename type 'Main'
+1550700730397	Rename package 'application'
+1550701236228	Move file
+1550792149296	Rename package 'fxmlexample'
+1550792443184	Rename type 'FXMLExample'
+1550792518739	Rename type 'FXMLExampleController'
+1550793927248	Rename resource 'fxml_example.fxml'
+1550794255008	Copy file
+1550794261434	Delete element
+1550868761916	Rename resource 'user_interface.fxml'
+1550875334298	Copy file
+1550877405405	Rename resource '01_start_screen.fxml'
+1550877471892	Rename resource 'primaryStage.fxml'
+1550877487260	Rename resource '01primaryStage.fxml'
+1550877797115	Rename resource '02_timers_screen.fxml'
+1550881130143	Rename resource '01_primaryStage.fxml'
+1550881170612	Rename resource '02_chessClockStage.fxml'
+1550882814109	Rename method 'handlePauzeButtonAction'

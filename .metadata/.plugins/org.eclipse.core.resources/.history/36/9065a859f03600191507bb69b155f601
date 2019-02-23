@@ -1,0 +1,29 @@
+package nl.dennisdebooij.chessclock;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+public class ChessClockController {
+	
+	@FXML 
+	private Text actiontarget;
+	@FXML
+	public Button playButton;
+	@FXML
+	public Button closeButton;
+	
+	@FXML 
+	protected void handlePlayButtonAction(ActionEvent event) {
+		actiontarget.setText("TO DO: switch to clock window");
+	}
+	
+	@FXML
+	public void handleCloseButtonAction(ActionEvent event) {
+	    Stage stage = (Stage) closeButton.getScene().getWindow();
+	    stage.close();
+	}
+
+}

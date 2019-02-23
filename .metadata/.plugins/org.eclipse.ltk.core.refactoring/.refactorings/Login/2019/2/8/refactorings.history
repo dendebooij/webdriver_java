@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;background.jpg&apos; to &apos;FXMLExample/src/fxmlexample&apos;&#x0D;&#x0A;- Original project: &apos;Login&apos;&#x0D;&#x0A;- Destination element: &apos;FXMLExample/src/fxmlexample&apos;&#x0D;&#x0A;- Original element: &apos;background.jpg&apos;" description="Copy file" destination="=FXMLExample/src&lt;fxmlexample" element1="src/application/background.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1550701824525" units="0" version="1.0"/>
+</session>

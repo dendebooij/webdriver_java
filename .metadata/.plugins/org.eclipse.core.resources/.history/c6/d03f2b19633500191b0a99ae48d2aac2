@@ -1,0 +1,20 @@
+package countdowntutorial;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class CountDown {
+	private Timer timer;
+	private int countDown;
+	private int secondsLeft;
+	
+	public CountDown() {
+		timer = new Timer();
+		}
+	
+	public void resetCountdown() {
+		secondsLeft = countDown;
+		timer.schedule(new TimerTask())
+	}
+	
+}
