@@ -5,9 +5,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class HorizontalSliderPage {
-    private WebDriver driver;
-    private By slider = By.cssSelector(".sliderContainer input");
-    private By sliderValue = By.id("range");
+    private final WebDriver driver;
+    private final By slider = By.cssSelector(".sliderContainer input");
+    private final By sliderValue = By.id("range");
 
     public HorizontalSliderPage(WebDriver driver) {
         this.driver = driver;

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -39,6 +39,46 @@ public class HomePage {
     public AlertsPage clickAlertsPage() {
         clickLink("JavaScript Alerts");
         return new AlertsPage(driver);
+    }
+
+    public FileUploadPage clickFileUploadPage() {
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
+    public EntryAddPage clickEntryAddPage(){
+        clickLink("Entry Ad");
+        return new EntryAddPage(driver);
+    }
+
+    public ContextMenuPage clickContextMenuPage(){
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
+    public EditorPage clickEditor(){
+        clickLink("WYSIWYG Editor");
+        return new EditorPage(driver);
+    }
+
+    public DynamicLoadingPage clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
+
+    public LargeAndDeepDomPage clickLargeAndDeepDom(){
+        clickLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
+
+    public InfiniteScrollPage clickInfiniteScroll(){
+        clickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+
+    public MultipleWindowPage clickMultipleWindows(){
+        clickLink("Multiple Windows");
+        return new MultipleWindowPage(driver);
     }
 
     private void clickLink(String linkText) {

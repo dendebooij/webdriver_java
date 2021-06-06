@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 
 public class HoversPage {
 
-    private WebDriver driver;
-    private By figureBox = By.className("figure");
-    private By boxCaption = By.className("figcaption");
+    private final WebDriver driver;
+    private final By figureBox = By.className("figure");
+    private final By boxCaption = By.className("figcaption");
 
     public HoversPage(WebDriver driver) {
         this.driver = driver;
@@ -27,10 +27,10 @@ public class HoversPage {
         return new FigureCaption(figure.findElement(boxCaption));
     }
 
-    public class FigureCaption {
-        private WebElement caption;
-        private By header = By.tagName("h5");
-        private By link = By.tagName("a");
+    public static class FigureCaption {
+        private final WebElement caption;
+        private final By header = By.tagName("h5");
+        private final By link = By.tagName("a");
 
         public FigureCaption(WebElement caption){
             this.caption = caption;
